@@ -26,11 +26,11 @@ public class Arreglos5 {
             }
         }
         System.out.println("Números pares: ");
-        for (int num : pares);{
+        for (int num : pares){
             System.out.print(num + " ");   
         }
         System.out.println("Numeros impares: ");
-        for(int num : impares);{
+        for(int num : impares){
             System.out.print(num + " ");
         }
     }

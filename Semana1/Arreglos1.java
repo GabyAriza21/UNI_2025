@@ -1,5 +1,6 @@
-public class Arreglos16 {
+public class Arreglos1 {
     public static void main(String[] args) {
+        //ejercicio número 1
         int[] numeros = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
         int par = 0;
@@ -14,5 +15,8 @@ public class Arreglos16 {
         }
         System.out.println("Suma de números pares: " + par);
         System.out.println("Suma números impares: " + impar);
+
+        System.out.println("------------------------------------");
+
     }
-}
+} 

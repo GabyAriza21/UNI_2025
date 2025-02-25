@@ -15,7 +15,7 @@ public class ejercicios {
         for (int i = 0; i < a.length; i++) {
             a[i] = (int) (Math.random() * (20 + 20)) - 20;
         }
-
+         //mostrar el arreglo
         for (int i = 0; i < a.length; i++) {
             System.out.print("|" + a[i]);
         }
@@ -59,7 +59,6 @@ public class ejercicios {
             }
 
         }
-
         System.out.println(Arrays.toString(positivos));
         System.out.println(Arrays.toString(negativos));
         System.out.println(Arrays.toString(ceros));

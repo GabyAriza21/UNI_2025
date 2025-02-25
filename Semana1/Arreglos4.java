@@ -1,4 +1,4 @@
-public class Arreglos2 {
+public class Arreglos4 {
     public static void main(String[] args) {
         //ejercicio 2
         int [] grupo1 = {14,18,20,25};

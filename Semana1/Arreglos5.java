@@ -1,4 +1,4 @@
-public class Arreglos3 {
+public class Arreglos5 {
     public static void main(String[] args) {
         double [] precios = {15.1, 16.7, 17.8};
         int [] cantCompradas = {1, 2, 3};

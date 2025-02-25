@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class ejercicios {
+public class Arreglos11 {
     public static void main(String[] args) {
         // ejercicio 11
         // creacion arreglo A de enteros de n elementos con un arreglo que estara

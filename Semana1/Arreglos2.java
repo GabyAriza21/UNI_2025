@@ -16,7 +16,7 @@ public class Arreglos2 {
         double [] C = {20.0, 30.0, 10.0};
 
         // Arreglo que alamacena el neto a pagar a cada empleado. ej a.length -> 3
-        double[] T = new double.[T.lenght];
+        double[] T = new double[T.lenght];
         // asignacion de la formula a cada posicion del arreglo T 
         for (int i = 0; i < T.lenght; i++) {
             T[i] = A[i] - C[i];

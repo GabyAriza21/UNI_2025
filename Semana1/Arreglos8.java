@@ -27,13 +27,21 @@ public class Arreglos8 {
                 menor = numeros[i];
             }
             }
+            // cuenta cuantas veces se repite el mayor y el menor
+            int countMayor = 0;
+            int countMenor = 0; 
+            for (int num : numeros) {
+                if (num == mayor) countMayor++;
+                if (num == menor) countMenor++;
+            }
+
             // mostrar los numeros generados 
             System.out.println("Numeros generados: ");
             for (int num : numeros) {
                 System.out.println(num + " ");
             }
-            System.out.println("El numero mayor es: " + mayor);
-            System.out.println("El numero menor es: " + menor);
+            System.out.println("El numero mayor es: " + mayor + "(se repite " + countMayor + " veces))");
+            System.out.println("El numero menor es: " + menor + "(se repite " + countMenor + " veces))");
                
 
     }

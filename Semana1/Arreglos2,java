@@ -23,7 +23,5 @@ public class Arreglos2 {
         for (int i = 0; i < Tlength; i++){
             System.out.println("T[" + "]=" + T[i]);
         }
-
         }
-
 }

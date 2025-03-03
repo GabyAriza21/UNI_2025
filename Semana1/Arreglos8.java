@@ -15,12 +15,12 @@ public class Arreglos8 {
             numeros[i] = random.nextInt(80) + 1 ; 
         }
          // definir contadores
-          int mayor = 0;
-          int menor = 0;
+          int mayor = numeros[0];
+          int menor = numeros[0];
 
         // definir los numeros mayor y menor 
         for (int i = 1; i < numeros.length; i++) {
-            if (numeros[i] < mayor) {
+            if (numeros[i] > mayor) {
                 mayor = numeros[i];
             } 
             if (numeros[i] < menor){

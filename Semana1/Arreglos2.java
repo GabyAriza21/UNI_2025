@@ -16,13 +16,13 @@ public class Arreglos2 {
         double [] C = {20.0, 30.0, 10.0};
 
         // Arreglo que alamacena el neto a pagar a cada empleado. ej a.length -> 3
-        double[] T = new double[T.lenght];
+        double[] T = new double[A.length];
         // asignacion de la formula a cada posicion del arreglo T 
-        for (int i = 0; i < T.lenght; i++) {
+        for (int i = 0; i < T.length; i++) {
             T[i] = A[i] - C[i];
         }
         //mostrar el neto a pagar de los empleados
-        for (int i = 0; i < Tlength; i++){
+        for (int i = 0; i < T.length; i++){
             System.out.println("T[" + "]=" + T[i]);
         }
     }

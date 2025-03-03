@@ -8,10 +8,11 @@ public class Arreglos8 {
         
         // dar opcion a ingresar la cantidad de numeros
         int [] numeros = new int [30];
+        Random random = new Random(); 
         
         //definir numeros aleatorios entre 10 y 60
         for (int i = 0; i < numeros.length; i++) {
-            numeros[i] = random.nextInt(80)+ 1 ; 
+            numeros[i] = random.nextInt(80) + 1 ; 
         }
          // definir contadores
           int mayor = 0;

@@ -1,5 +1,5 @@
 public class Arreglos2 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         // ejercicio2
         // se tienen N empleados de una compañia y se ha ideado llenar un
         // arreglo lineal A con sueldos de los empleados, un arreglo B con las

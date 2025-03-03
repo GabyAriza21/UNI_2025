@@ -5,7 +5,7 @@ public class Arreglos10 {
     public static void main(String[] args) {
         int [] numeros = new int [8];
         Random random = new Random(); 
-        int [] sumaOpuestos = new int[8];;
+        int [] sumaOpuestos = new int[8];
         int n = numeros.length; 
         
         //definir numeros aleatorios entre 10 

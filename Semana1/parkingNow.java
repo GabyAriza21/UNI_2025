@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
-public class parkingNow{
+public class parkingNow {
     public static void main(String[] args) {
-       Scanner leer = new Scanner(System.in);
-        
+        Scanner leer = new Scanner(System.in);
+
         // Creación del arreglo (parqueadero) de 20 posiciones
         String[] m = { "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_", "_",
                 "_", "_" };
@@ -41,8 +41,8 @@ public class parkingNow{
                     }
 
                     // Validar y Asignar la moto a la posición digitada por el usuario
-                    if (m[pos-1].equals("_")) {
-                        m[pos-1] = "M";
+                    if (m[pos - 1].equals("_")) {
+                        m[pos - 1] = "M";
                         System.out.println("Su moto ha sido asignada a la posicion # " + pos);
                     } else {
                         System.out.println("Espacio no disponible");
@@ -68,6 +68,4 @@ public class parkingNow{
 
     }
 
-
-    }
-    
+}

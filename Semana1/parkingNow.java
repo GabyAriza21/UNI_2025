@@ -54,27 +54,26 @@ public class parkingNow {
                     }
 
                     break;
-                case 2: 
-                System.out.println("Ingrese el tiempo en parqueadero: ");
-                int tiempo = leer.nextInt();
+                case 2:
+                    System.out.println("Ingrese el tiempo en parqueadero: ");
+                    int tiempo = leer.nextInt();
 
-                if(tiempo <= 30){
-                    System.out.println("El valor a pagar es %0. ");
-                }else if(tiempo >= 31 && tiempo <= 60){
-                    System.out.println("El valor a pagar es de $800. ");
-                }else{
-                    System.out.println("El valor a pagar es de $2000. ");
-                }
+                    if (tiempo <= 30) {
+                        System.out.println("El valor a pagar es %0. ");
+                    } else if (tiempo >= 31 && tiempo <= 60) {
+                        System.out.println("El valor a pagar es de $800. ");
+                    } else {
+                        System.out.println("El valor a pagar es de $2000. ");
+                    }
                     break;
                 default:
                     continuar = false;
                     break;
-            } 
-            
+            }
+
         } while (continuar);
-        
+
         leer.close();
-        
 
     }
 }

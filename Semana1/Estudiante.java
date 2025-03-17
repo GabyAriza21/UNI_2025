@@ -7,12 +7,53 @@ public class Estudiante {
     private int edad;
     private String facultad;
 
-    //constructor de la clase: permite inicializar la clase
-    public Estudiante(int id, String nombre, String apellido, int edad, String faultad){
-        this.id = id; //this es una autoreferencia a los atributos de la clase
+    // constructor de la clase: permite inicializar la clase
+    public Estudiante(int id, String nombre, String apellido, int edad, String faultad) {
+        this.id = id; // this es una autoreferencia a los atributos de la clase
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
+        this.facultad = facultad;
+    }
+
+    // metodos get y set (getters y setters)
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public String getFacultad() {
+        return facultad;
+    }
+
+    public void setFacultad(String facultad) {
         this.facultad = facultad;
     }
 
@@ -29,5 +70,13 @@ public class Estudiante {
             cad = "Sus creditos cumplen lo requerido";
         }
         return cad;
+    }
+
+    public String toString() {
+        return "Estudiante: { id:" + id +
+                " nombre:" + nombre +
+                " apellido:" + apellido +
+                " edad:" + edad +
+                " facultad:" + facultad + "}";
     }
 }

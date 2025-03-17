@@ -8,7 +8,7 @@ public class Estudiante {
     private String facultad;
 
     // constructor de la clase: permite inicializar la clase
-    public Estudiante(int id, String nombre, String apellido, int edad, String faultad) {
+    public Estudiante(int id, String nombre, String apellido, int edad, String facultad) {
         this.id = id; // this es una autoreferencia a los atributos de la clase
         this.nombre = nombre;
         this.apellido = apellido;

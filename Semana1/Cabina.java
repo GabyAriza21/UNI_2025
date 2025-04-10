@@ -1,26 +1,31 @@
 public class Cabina extends Equipaje {
-    // Atributos
-    private double precioFinal;
 
     // Constantes
-    private static final double PESO = 10.0;
-    private static final double TAMANIO = 4.5;
     private final static int TIEMPO = 2;
 
     // Constructores
-    public Cabina(double peso, double tamanio, double precioFinal) {
-        super(peso, tamanio, precioFinal);
-        this.precioFinal = precioFinal;
+    public Cabina(double peso, double tamanio) {
+        super(peso, tamanio);
+    }
+
+    public Cabina(double precioBase) {
+        super(precioBase);
+    }
+
+    public Cabina() {
+        super();
     }
 
     // Metodos
     public double calcularPrecio() {
-        // Calculos
-        return precioFinal; 
+        return getPrecioBase() + (getPeso() * getTamanio() * TIEMPO);
+
     }
+
     public String toString() {
         return "Cabina { peso: " + getPeso() +
                 ", tamanio: " + getTamanio() +
-                ", precioFinal: " + precioFinal + "}";
+                ", precioBase: " + getPrecioBase() +
+                ", precioFinal: " + calcularPrecio() + "}";
     }
 }

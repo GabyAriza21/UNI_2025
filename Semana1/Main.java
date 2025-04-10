@@ -11,5 +11,5 @@ public class Main {
         PrecioTotal solucion = new PrecioTotal(equipaje);
         solucion.mostrarTotales();
     }
-    
+
 }

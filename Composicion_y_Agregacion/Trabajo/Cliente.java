@@ -1,17 +1,19 @@
 package Composicion_y_Agregacion.Trabajo;
 
 public class Cliente {
+    //atributos
+    private int cedula; //cedula del cliente
+    private String nombre; // nombre del cliente
 
-    private int cedula;
-    private String nombre;
-
+    //constructor
     public Cliente(int cedula, String nombre) {
-        this.cedula = cedula;
-        this.nombre = nombre;
+        this.cedula = cedula; // inicializa el atributo cedula
+        this.nombre = nombre; // inicializa el atributo nombre
     }
 
-    public String getNombre(){
-        return nombre;
+    // metodos 
+    public String getNombre(){ 
+        return nombre; // entrega el nombre del cliente
     }
     
     public String toString(){

@@ -1,3 +1,5 @@
+package Momento1;
+
 
 // Esta clase permite leer la entrada de datos por teclado
 import java.util.Scanner;

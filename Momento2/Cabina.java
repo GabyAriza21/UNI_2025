@@ -1,27 +1,30 @@
-public class Bodega extends Equipaje {
+package Momento2;
+public class Cabina extends Equipaje {
+
     // Constantes
-    private static final double CAPACIDAD = 8.0;
+    private final static int TIEMPO = 2;
 
     // Constructores
-    public Bodega(double peso, double tamanio) {
+    public Cabina(double peso, double tamanio) {
         super(peso, tamanio);
     }
 
-    public Bodega(double precioBase) {
+    public Cabina(double precioBase) {
         super(precioBase);
     }
 
-    public Bodega() {
+    public Cabina() {
         super();
     }
 
     // Metodos
     public double calcularPrecio() {
-        return getPrecioBase() + (getPeso() * getTamanio() * CAPACIDAD);
+        return getPrecioBase() + (getPeso() * getTamanio() * TIEMPO);
+
     }
 
     public String toString() {
-        return "Bodega { peso: " + getPeso() +
+        return "Cabina { peso: " + getPeso() +
                 ", tamanio: " + getTamanio() +
                 ", precioBase: " + getPrecioBase() +
                 ", precioFinal: " + calcularPrecio() + "}";

@@ -1,3 +1,4 @@
+package Momento2;
 public class PrecioTotal {
     // Atributos
     private double TotalPrecios;

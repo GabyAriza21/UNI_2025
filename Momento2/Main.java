@@ -1,3 +1,5 @@
+package Momento2;
+
 public class Main {
     public static void main(String[] args) {
         Equipaje equipaje[] = new Equipaje[5];

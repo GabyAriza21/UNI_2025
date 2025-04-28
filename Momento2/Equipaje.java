@@ -1,3 +1,4 @@
+package Momento2;
 public class Equipaje {
     // Constantes
     private static final double PESO = 10.0;

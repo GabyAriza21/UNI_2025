@@ -9,9 +9,6 @@ public class Main {
         System.out.println(cuenta);
         System.out.println(cliente);
 
-
-
-
-        
+        Banco banco = new Banco(1,"Mi primer ahorro", cuenta);
     }
 }

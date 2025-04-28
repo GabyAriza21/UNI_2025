@@ -19,10 +19,11 @@ public class Pedido {
      }
     
      public String toString(){
-        return "Pedido{ cliente: " + cliente.toString() +
-        ", fecha: " + fecha.toString() +
-        ", numeroTarjetaCredito: " + numeroTarjetaCredito +
-        ", productos: " + Arrays.toString(producto) + " }"; // imprime el cliente, fecha, numero de tarjeta de credito y los productos
+        return "Pedido{\n" +
+        " cliente: " + cliente.toString() + "\n" +
+        " fecha: " + fecha.toString() + "\n" +
+        " numeroTarjetaCredito: " + numeroTarjetaCredito + "\n" +
+        " productos: " + Arrays.toString(producto) + "\n" +" }"; // imprime el cliente, fecha, numero de tarjeta de credito y los productos
 
      }
 }

@@ -1,3 +1,4 @@
+package Trabajos_Practica;
 public class Operaciones {
     float Numero1;
     float Numero2;

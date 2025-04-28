@@ -1,3 +1,4 @@
+package Trabajos_Practica;
 import java.util.Scanner;
 
 public class Calculadora {

@@ -5,6 +5,8 @@ public class Producto {
 
     public Producto(int numero){
         this.numero = numero; 
-
+    }
+    public int getnumero(){
+        return numero;
     }
 }

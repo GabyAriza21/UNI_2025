@@ -16,7 +16,7 @@ public class Banco {
         System.out.println(cliente);
     }
     public String toString(){
-        return "Banco { id: " + id + " Nombre: " + nombre + " Cuenta { " + cuenta + " }}";
+        return "Banco { id: " + id + " Nombre: " + nombre + " " + cuenta + "}";
     }
     
 }

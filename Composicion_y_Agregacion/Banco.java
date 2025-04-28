@@ -15,5 +15,8 @@ public class Banco {
     public void mostrarCliente(Cliente cliente){
         System.out.println(cliente);
     }
+    public String toString(){
+        return "Banco { id: " + id + " Nombre: " + nombre + " Cuenta { " + cuenta + " }}";
+    }
     
 }

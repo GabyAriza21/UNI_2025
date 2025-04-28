@@ -1,3 +1,4 @@
+package Semana3_4;
 public class Arreglos5 {
     public static void main(String[] args) {
         double [] precios = {15.1, 16.7, 17.8};

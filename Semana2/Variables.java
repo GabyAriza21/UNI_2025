@@ -1,3 +1,4 @@
+package Semana2;
 public class Variables {
     public static void main(String[] args) {
         //decalracion de una variable de tipo entero

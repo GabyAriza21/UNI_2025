@@ -1,3 +1,4 @@
+package Semana3_4;
 public class Arreglos7 {
     public static void main(String[] args) {
         int [] A = {13, 5 ,2 , 10, 34, 55, 60, 21, 11, 24, 46};

@@ -11,5 +11,8 @@ public class Main {
 
         Banco banco = new Banco(1,"Mi primer ahorro", cuenta);
         System.out.println(banco);
+
+        banco.mostrarCliente(cliente);
     }
+
 }

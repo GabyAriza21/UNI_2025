@@ -1,3 +1,4 @@
+package Semana2;
 public class Bucles {
     public static void main(String[] args) {
         //for

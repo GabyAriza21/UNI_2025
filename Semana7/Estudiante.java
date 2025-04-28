@@ -1,3 +1,4 @@
+package Semana7;
 public class Estudiante {
 
     // Atrubutos

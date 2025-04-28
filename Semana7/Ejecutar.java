@@ -1,3 +1,4 @@
+package Semana7;
 public class Ejecutar {
     public static void main(String[] args) {
         // creacion del objeto (instanciar (operador new) el objeto)

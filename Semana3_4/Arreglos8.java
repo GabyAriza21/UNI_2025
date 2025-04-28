@@ -1,3 +1,4 @@
+package Semana3_4;
 import java.util.Random;
 
 public class Arreglos8 {

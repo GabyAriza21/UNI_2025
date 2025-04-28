@@ -1,3 +1,4 @@
+package Semana3_4;
 public class Arreglos3 {
     public static void main(String[] args) {
         //ejercicio número 1

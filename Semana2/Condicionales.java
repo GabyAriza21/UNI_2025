@@ -1,3 +1,4 @@
+package Semana2;
 public class Condicionales {
     public static void main(String[] args) {
         int numero = -5;

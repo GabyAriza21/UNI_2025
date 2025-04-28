@@ -1,3 +1,4 @@
+package Semana3_4;
 public class Arreglos6 {
     public static void main(String[] args) {
         double [] alquiler = {1000.0, 2000.0, 3000.0};

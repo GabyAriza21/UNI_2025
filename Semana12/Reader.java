@@ -1,9 +1,9 @@
 package Semana12;
 
 public class Reader {
-    
+
     private String element;
-    private Converter converter; //composición
+    private Converter converter; // composición
 
     public Reader(String element, Converter converter) {
         this.element = element;
@@ -14,7 +14,7 @@ public class Reader {
         return element;
     }
 
-    public void parseInput(){
+    public void parseInput() {
         switch (element) {
             case "line":
                 converter.makeLine();

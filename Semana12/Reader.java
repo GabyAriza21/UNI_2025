@@ -3,7 +3,7 @@ package Semana12;
 public class Reader {
     
     private String element;
-    private Converter converter;
+    private Converter converter; //composición
 
     public Reader(String element, Converter converter) {
         this.element = element;

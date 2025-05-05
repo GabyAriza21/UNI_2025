@@ -10,7 +10,6 @@ public class Converter {
     public String getDocument() {
         return document;
     }
-
     public void makeLine(){
         System.out.println("");
     }
@@ -22,6 +21,9 @@ public class Converter {
     public void makeTable(){
         System.out.println("");
     }
+
+    
+    
 
 }
 

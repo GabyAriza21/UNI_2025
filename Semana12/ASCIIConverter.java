@@ -11,6 +11,7 @@ public class ASCIIConverter extends Converter {
 
     public void makeLine(){
         System.out.println("makeLine ASCII");
+         
     }
 
     public void makeParagraph(){

@@ -3,7 +3,7 @@ package JuegoPoo;
 public class HeladoPaleta extends Personaje {
 
     //inicializa un HeladoPaleta con nombre, puntos de vida y topping
-    public HeladoPaleta(String nombre, int puntosVida, String tipoCono, Topping topping) {
+    public HeladoPaleta(String nombre, int puntosVida, Topping topping) {
         super(nombre, puntosVida, 30, 10, topping);
     }
 

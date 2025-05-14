@@ -4,7 +4,7 @@ public class HeladoCono extends Personaje {
     private boolean escudo;
 
     //inicializa un HeladoCono con nombre, puntos de vida, topping y escudo desactivado
-    public HeladoCono(String nombre, int puntosVida, String tipoCono, Topping topping){
+    public HeladoCono(String nombre, int puntosVida, Topping topping){
         super(nombre, puntosVida, 30, 10, topping);
         this.escudo = false;
     }

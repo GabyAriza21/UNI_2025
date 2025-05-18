@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class LuchaJuego {
     private Personaje helado1;
     private Personaje helado2;
-    
 
     // inicializa los dos personajes para la lucha
     public LuchaJuego(Personaje helado1, Personaje helado2) {
@@ -43,7 +42,7 @@ public class LuchaJuego {
         }
     }
 
-    //simula un turno de pelea, atacando a otro personaje
+    // simula un turno de pelea, atacando a otro personaje
     public void turno(Personaje enemigo, Personaje atacado) {
         System.out.println("Turno de " + enemigo.getNombre() + ":");
         enemigo.atacar(atacado);

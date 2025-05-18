@@ -1,7 +1,5 @@
 package JuegoPoo;
 
-import java.util.Scanner;
-
 public class LuchaJuego {
     private Personaje helado1;
     private Personaje helado2;

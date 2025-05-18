@@ -15,7 +15,6 @@ public class LuchaJuego {
 
     // inicia la pelea, alternando los turnos de los personajes
     public void iniciarPelea() {
-        Scanner scanner = new Scanner(System.in);
         System.out.println("¡La pelea ha comenzado entre " + helado1.getNombre() + " y " + helado2.getNombre() + "!");
 
         // ciclo de pelea mientras los personajes estan vivos

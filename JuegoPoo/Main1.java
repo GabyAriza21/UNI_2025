@@ -9,7 +9,7 @@ public class Main1 {
 
         
          HeladoCono helado1 = new HeladoCono("Helado de chocolate", 100, topping1);
-         HeladoCono helado2 = new HeladoCono("helado de mango biche", 100, topping2);
+         HeladoPaleta helado2 = new HeladoPaleta("helado de mango biche", 100, topping2);
 
          LuchaJuego lucha = new LuchaJuego(helado1, helado2);
          lucha.iniciarPelea(); 

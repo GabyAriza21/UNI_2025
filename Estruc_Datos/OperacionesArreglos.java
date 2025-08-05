@@ -17,7 +17,7 @@ public class OperacionesArreglos {
         return numeros;
     }
 
-    //Sumar los elementos de un arreglo de enteros
+    //Sumar los elementos de un arreglo de enteros   
 
     //Obtener el promedio de un arreglo de enteros
 

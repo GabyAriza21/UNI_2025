@@ -7,3 +7,4 @@ public class EjecutarHerencia {
         System.out.println(pago2.pagar());
     }
 }
+

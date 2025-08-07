@@ -4,7 +4,7 @@ public class Ejercicios {
     public static void main(String[] args) {
         //Sumar los elementos de un arreglo de enteros   
         int[] arreglo = {7, 10, 11, 15, 8};
-        int suma = 0;
+        int suma = 0; // variable entera simple: almacena el resultado de la suma
 
         for(int i = 0; i < arreglo.length; i++) {
            suma += arreglo[i];
@@ -12,6 +12,3 @@ public class Ejercicios {
         System.out.println("Suma: " + suma);
     }
 }
-
-
-    

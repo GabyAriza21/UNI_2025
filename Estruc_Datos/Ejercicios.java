@@ -10,5 +10,24 @@ public class Ejercicios {
            suma += arreglo[i];
         }
         System.out.println("Suma: " + suma);
+
+        System.out.println("-----------------------------------------");
+
+        //Obtener el promedio de un arreglo de enteros
+        int[] arreglo2 = {25, 26, 78, 41, 10};
+        int suma2 = 0; 
+
+        for(int i = 0; i < arreglo2.length; i++) {
+          suma2 += arreglo2[i];  
+        }
+        double promedio = suma2/arreglo2.length;
+        System.out.println("promedio: " +  promedio);
+
+        
+
+
+
+
     }
 }
+

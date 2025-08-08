@@ -26,7 +26,34 @@ public class Ejercicios {
         System.out.println("-------------------------------------------");
 
         // Obtener los numeros repetidos de un arreglo de enteros
-        int[] arreglo3 = {12, 34, 32, 12, 54, 32};
+        int[] arreglo3 = { 11, 34, 11, 22, 34 };
 
+        System.out.println("Los repetidos son: ");
+
+        for (int i = 0; i < arreglo3.length; i++) {
+            for (int j = i + 1; j < arreglo3.length; j++) {
+                if (arreglo3[i] == arreglo3[j]) {
+                    System.out.println(arreglo3[i]);
+                    break;
+                }
             }
         }
+        System.out.println("-------------------------------------------");
+
+        // Obtener el mayor y el menor de un arreglo de enteros
+        int[] arreglo4 = { 1, 4, 6, 3, 8, 9, 6, 17 };
+        int mayor = arreglo4 [0];
+        int menor = arreglo4 [0];
+
+        for (int i = 0; i < arreglo4.length; i++) {
+            if (arreglo4[i] > mayor) {
+                mayor = arreglo4[i];
+            }
+            if (arreglo4[i] < menor) {
+                menor = arreglo4[i];
+            }
+        }
+        System.out.println("El mayor es: " + mayor);
+        System.out.println("El menor es: " + menor);
+    }
+}

@@ -42,8 +42,8 @@ public class Ejercicios {
 
         // Obtener el mayor y el menor de un arreglo de enteros
         int[] arreglo4 = { 1, 4, 6, 3, 8, 9, 6, 17 };
-        int mayor = arreglo4 [0];
-        int menor = arreglo4 [0];
+        int mayor = arreglo4[0];
+        int menor = arreglo4[0];
 
         for (int i = 0; i < arreglo4.length; i++) {
             if (arreglo4[i] > mayor) {

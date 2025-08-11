@@ -27,6 +27,10 @@ public class Estudiante {
         System.out.println("id: " + id + "Cursos Matriculados: " + cad);
     }
 
+    public String toString(){
+        return "Estudiante { id:" + id +  " Nombre: " + nombre + "Apellido: " + apellido + " Facultad: " + facultad + "}"; //maquetar para que se vea bien
+    }
+
 
 
     

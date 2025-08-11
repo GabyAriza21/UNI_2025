@@ -28,10 +28,6 @@ public class Estudiante {
     }
 
     public String toString(){
-        return "Estudiante { id:" + id +  " Nombre: " + nombre + "Apellido: " + apellido + " Facultad: " + facultad + "}"; //maquetar para que se vea bien
+        return "Estudiante { id:" + id +  " Nombre: " + nombre + "Apellido: " + apellido + " Facultad: " + facultad + "}"; //maquetar(estetica)
     }
-
-
-
-    
 }

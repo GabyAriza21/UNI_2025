@@ -1,4 +1,4 @@
-package Estruc_Datos;
+package Estruc_Datos.Clase2;
 
 import java.util.Arrays;
 

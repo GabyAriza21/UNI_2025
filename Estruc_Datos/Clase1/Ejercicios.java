@@ -1,4 +1,4 @@
-package Estruc_Datos;
+package Estruc_Datos.Clase1;
 
 public class Ejercicios {
     public static void main(String[] args) {

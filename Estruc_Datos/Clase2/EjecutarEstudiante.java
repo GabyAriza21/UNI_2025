@@ -43,5 +43,9 @@ public class EjecutarEstudiante {
             System.out.println(est[i]);
 
         }
+
+        System.out.println(" --------------------------------------------");
+        
+
     }
 }

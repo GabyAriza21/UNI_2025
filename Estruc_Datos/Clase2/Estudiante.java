@@ -36,15 +36,8 @@ public class Estudiante {
                 + "}"; // maquetar(estetica)
     }
 
-    // metodo para contar estudiantes por facultad
-    public static void ContarEstudiantesPorFacultad(Estudiante[] estudiantes) {
-        String[] facultades = new String[estudiantes.length];
-        int[] contador = new int[estudiantes.length];
-        int cantidadFacultades = 0;
-
-        // implementar el metodo +matricularCursos(id:int, cursos[]:String):void
-        // implementar un metodo que permita saber cuantos estudiantes hay en cada
-        // facultad
-        // implementar un metodo que permita saber cuantos estudiantes hay en cad curso
-    }
+    // implementar el metodo +matricularCursos(id:int, cursos[]:String):void
+    // implementar un metodo que permita saber cuantos estudiantes hay en cada
+    // facultad
+    // implementar un metodo que permita saber cuantos estudiantes hay en cad curso
 }

@@ -39,13 +39,13 @@ public class EjecutarEstudiante {
         }
 
         System.out.println("--------------------------------------------");
+
         for (int i = 0; i < est.length; i++) {
             System.out.println(est[i]);
 
         }
 
         System.out.println(" --------------------------------------------");
-        
 
     }
 }

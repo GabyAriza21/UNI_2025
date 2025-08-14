@@ -47,5 +47,40 @@ public class EjecutarEstudiante {
 
         System.out.println(" --------------------------------------------");
 
+        contarEstudiantesPorFacultad(est);
+    }
+
+    public static void contarEstudiantesPorFacultad(Estudiante[] estudiantes) {
+        String[] facultades = new String[estudiantes.length];
+        int[] conteo = new int[estudiantes.length];
+        int cantidadFacultades = 0;
+
+        for (int i = 0; i < estudiantes.length; i++) {
+            String facultad = estudiantes[i].getFacultad();
+            int indice = -1;
+
+            // Ver si la facultad ya está registrada
+            for (int j = 0; j < cantidadFacultades; j++) {
+                if (facultades[j].equalsIgnoreCase(facultad)) {
+                    indice = j;
+                    break;
+                }
+            }
+
+            // Si no está, agregarla
+            if (indice == -1) {
+                facultades[cantidadFacultades] = facultad;
+                conteo[cantidadFacultades] = 1;
+                cantidadFacultades++;
+            } else {
+                conteo[indice]++;
+            }
+        }
+
+        // Mostrar resultados
+        System.out.println("Cantidad de estudiantes por facultad:");
+        for (int i = 0; i < cantidadFacultades; i++) {
+            System.out.println(facultades[i] + ": " + conteo[i]);
+        }
     }
 }

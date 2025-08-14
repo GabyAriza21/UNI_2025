@@ -51,17 +51,17 @@ public class EjecutarEstudiante {
     }
 
     public static void contarEstudiantesPorFacultad(Estudiante[] estudiantes) {
-        String[] facultades = new String[estudiantes.length];
+        String[] Facultades = new String[estudiantes.length];
         int[] conteo = new int[estudiantes.length];
         int cantidadFacultades = 0;
 
         for (int i = 0; i < estudiantes.length; i++) {
-            String facultad = estudiantes[i].getFacultad();
+            String Facultad = estudiantes[i].getFacultad();
             int indice = -1;
 
             // Ver si la facultad ya está registrada
             for (int j = 0; j < cantidadFacultades; j++) {
-                if (facultades[j].equalsIgnoreCase(facultad)) {
+                if (Facultades[j].equalsIgnoreCase(Facultad)) {
                     indice = j;
                     break;
                 }
@@ -69,7 +69,7 @@ public class EjecutarEstudiante {
 
             // Si no está, agregarla
             if (indice == -1) {
-                facultades[cantidadFacultades] = facultad;
+                Facultades[cantidadFacultades] = Facultad;
                 conteo[cantidadFacultades] = 1;
                 cantidadFacultades++;
             } else {
@@ -80,7 +80,7 @@ public class EjecutarEstudiante {
         // Mostrar resultados
         System.out.println("Cantidad de estudiantes por facultad:");
         for (int i = 0; i < cantidadFacultades; i++) {
-            System.out.println(facultades[i] + ": " + conteo[i]);
+            System.out.println(Facultades[i] + ": " + conteo[i]);
         }
     }
 }

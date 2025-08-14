@@ -82,6 +82,8 @@ public class EjecutarEstudiante {
         for (int i = 0; i < cantidadFacultades; i++) {
             System.out.println(Facultades[i] + ": " + conteo[i]);
         }
+
+        contarEstudiantesPorCurso(estudiantes);
     }
 
         public static void contarEstudiantesPorCurso(Estudiante[] estudiantes){

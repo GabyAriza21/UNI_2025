@@ -6,13 +6,19 @@ public class Estudiante {
     private String nombre;
     private String apellido;
     private String facultad;
+    private String curso;
 
     // constructor clase = MISMO NOMBRE DE LA CLASE
-    public Estudiante(int id, String nombre, String apellido, String facultad) {
+    public Estudiante(int id, String nombre, String apellido, String facultad, String curso) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
         this.facultad = facultad;
+        this.curso = curso;
+    }
+
+    public String getCurso() {
+        return curso;
     }
 
     public int getId() {
@@ -32,8 +38,11 @@ public class Estudiante {
     }
 
     public String toString() {
-        return "Estudiante { id:" + id + " Nombre: " + nombre + "Apellido: " + apellido + " Facultad: " + facultad
-                + "}"; // maquetar(estetica)
+        return "Estudiante { id:" + id +
+                " Nombre: " + nombre +
+                "Apellido: " + apellido +
+                " Facultad: " + facultad +
+                " Curso: " + curso + " }"; // maquetar(estetica)
     }
 
     // implementar el metodo +matricularCursos(id:int, cursos[]:String):void

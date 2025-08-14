@@ -6,9 +6,9 @@ public class EjecutarEstudiante {
     public static void main(String[] args) {
 
         // creacion de los objetos
-        Estudiante objEst1 = new Estudiante(909876, "juanito", "perez", "ingenieiria");
-        Estudiante objEst2 = new Estudiante(909877, "juanita", "perea", "ingenieiria");
-        Estudiante objEst3 = new Estudiante(909878, "sarita", "prado", "ingenieiria");
+        Estudiante objEst1 = new Estudiante(909876, "juanito", "perez", "ingenieiria", "matematicas");
+        Estudiante objEst2 = new Estudiante(909877, "juanita", "perea", "ingenieiria", "fisica");
+        Estudiante objEst3 = new Estudiante(909878, "sarita", "prado", "ingenieiria", "quimica");
 
         System.out.println(objEst1);
         System.out.println(objEst2);
@@ -27,8 +27,8 @@ public class EjecutarEstudiante {
 
         // forma2
 
-        est[3] = new Estudiante(789654, "juli", "torres", "derecho");
-        est[4] = new Estudiante(789655, "toño", "zuluaga", "Contaduria");
+        est[3] = new Estudiante(789654, "juli", "torres", "derecho", "Constitucional");
+        est[4] = new Estudiante(789655, "toño", "zuluaga", "Contaduria", "Financiero");
 
         System.out.println(Arrays.toString(est));
 
@@ -81,6 +81,37 @@ public class EjecutarEstudiante {
         System.out.println("Cantidad de estudiantes por facultad:");
         for (int i = 0; i < cantidadFacultades; i++) {
             System.out.println(Facultades[i] + ": " + conteo[i]);
+        }
+    }
+
+        public static void contarEstudiantesPorCurso(Estudiante[] estudiantes){
+            String[] Cursos = new String[estudiantes.length];
+            int[] conteoCursos = new int[estudiantes.length];
+            int cantidadCursos = 0;
+
+            for(int i = 0; i < estudiantes.length; i++){
+                String Curso = estudiantes[i].getCurso();
+                int indiceCurso = -1;
+
+            for(int j = 0; j < cantidadCursos; j++){
+                if(Cursos[j].equalsIgnoreCase(Curso)){
+                    indiceCurso = j;
+                    break;
+                }
+            }
+
+            if(indiceCurso == -1){
+                Cursos[cantidadCursos] = Curso;
+                conteoCursos[cantidadCursos] = 1;
+                cantidadCursos++;
+            } else {
+                conteoCursos[indiceCurso]++;
+            }
+        }
+
+        System.out.println("Cantidad de estudiantes por curso:");
+        for(int i = 0; i < cantidadCursos; i++){
+            System.out.println(Cursos[i] + ": " + conteoCursos[i]);
         }
     }
 }

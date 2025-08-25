@@ -10,10 +10,8 @@ public class EjecutarVehiculo {
         vehi[2] = new Vehiculo("ASC147", "Jeep", 2019, true);
         vehi[3] = new Vehiculo("QWE789", "Mazda", 2020, true);
         vehi[4] = new Vehiculo("ZXC321", "Toyota", 2017, false);
-        System.out.println(" --------------------------------------------");
-        for (int i = 0; i < vehi.length; i++) {
-            System.out.println(vehi[i]);
-        }
+
+        System.out.println(vehi[0].iterarVehiculos(vehi));
 
     }
 }

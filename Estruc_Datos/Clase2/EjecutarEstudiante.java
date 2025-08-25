@@ -84,6 +84,7 @@ public class EjecutarEstudiante {
         }
 
         contarEstudiantesPorCurso(estudiantes);
+        
     }
 
         public static void contarEstudiantesPorCurso(Estudiante[] estudiantes){

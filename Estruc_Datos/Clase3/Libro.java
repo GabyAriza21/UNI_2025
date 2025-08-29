@@ -11,6 +11,10 @@ public class Libro {
         this.precio = precio;
     }
 
+    public int getPrecio(){
+        return precio;
+    }
+
     public String toString() {
         return "Libro { Titulo: " + titulo +
                 "Autor: " + autor +

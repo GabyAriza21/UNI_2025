@@ -1,7 +1,5 @@
 package Estruc_Datos.Clase3;
 
-import java.util.Scanner;
-
 public class EjecutarLibro {
     public static void main(String[] args) {
         Libro[] L = new Libro[5];
@@ -37,21 +35,21 @@ public class EjecutarLibro {
         }
 
         // Actualiza el precio de un libro dado su título
-        actualizarPrecio(L, "El principito", 35000);//se hace el cambio
+        actualizarPrecio(L, "El principito", 35000);// se hace el cambio
         System.out.println("Nuevo precio:");// muestra el nuevo precio
-        for (Libro libro : L) { //recorre el arreglo
-            System.out.println(libro);//muestra el libro
-        } 
+        for (Libro libro : L) { // recorre el arreglo
+            System.out.println(libro);// muestra el libro
+        }
 
         // busqueda de libro por titulo
-        Libro libroEncontrado = buscarPorTitulo(L, "Cien años de perdon");//se busca el libro
+        Libro libroEncontrado = buscarPorTitulo(L, "Cien años de perdon");// se busca el libro
         if (libroEncontrado != null) { // si lo encuentra
             System.out.println("Libro encontrado: " + libroEncontrado);
         } else {
             System.out.println("Libro no encontrado");// si no lo encuentra
 
+        }
     }
-}
 
     // metodo que calcula el precio total de los libros
     public static int calcularPrecioTotal(Libro[] libros) { // metodo que devuelve numero entero y recibe un arreglo de

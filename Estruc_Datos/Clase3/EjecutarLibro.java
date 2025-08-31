@@ -104,22 +104,17 @@ public class EjecutarLibro {
         for (Libro libro : libros) {// recorre el arreglo
             if (libro.getTitulo().equalsIgnoreCase(titulo)) { // busca el libro
                 libro.setPrecio(nuevoPrecio);// actualiza el precio
-                System.out.println("Precio actualizado para: " + titulo);
                 return;
-
             }
         }
-        System.out.println("Libro no encontrado: " + titulo);// si no encuntra el libro
     }
 
     public static Libro buscarPorTitulo(Libro[] libros, String titulo) {
         for (Libro libro : libros) { // recorre el arreglo
             if (libro.getTitulo().equalsIgnoreCase(titulo)) { // compara el titulo
-                System.out.println("Libro encontrado: " + libro);
                 return libro; // devuelve el libro encontrado
             }
         }
-        System.out.println("Libro no encontrado: " + titulo);
         return null; // si no encuentra el libro
     }
 }

@@ -12,69 +12,69 @@ public class EjecutarLibro {
 
         // muestra todos los libros del arreglo
         System.out.println("Lista libros:");
-        for (Libro libro : L) { // bucle for-each: recorre todo el arreglo
-            System.out.println(libro); // llama al metodo toString()
+        for (Libro libro : L) { //recorre todo el arreglo
+            System.out.println(libro); // llama al metodo toString() 
         }
 
         // muestra el precio total de los libros
-        int total = calcularPrecioTotal(L);
-        System.out.println("El precio total de los libros es: " + total);
+        int total = calcularPrecioTotal(L); //llama al metodo
+        System.out.println("El precio total de los libros es: " + total); 
 
         // filtra los libros por precio mayor a 45000
         System.out.println("Libros con precio mayor a 45000:");
-        Libro[] resultado = filtrarPorPrecio(L, 45000);
-        for (Libro libro : resultado) {
-            System.out.println(libro);
+        Libro[] resultado = filtrarPorPrecio(L, 45000);// llama al metodo y tiene en cuenta el valor de referencia
+        for (Libro libro : resultado) { //recorre el arreglo
+            System.out.println(libro);//muestra el libro filtado
         }
 
         // ordena los libros por precio (menor a mayor)
-        ordenarPorPrecio(L);
+        ordenarPorPrecio(L); //se llama al metodo ordenarPorPrecio
         System.out.println("Libros ordenados por precio (menor a mayor):");
-        for (Libro libro : L) {
-            System.out.println(libro);
+        for (Libro libro : L) { //recorre
+            System.out.println(libro);//muestra el libro
         }
     }
 
     // metodo que calcula el precio total de los libros 
-    public static int calcularPrecioTotal(Libro[] libros) {
-        int suma = 0; // donde se acumula el total
-        for (int i = 0; i < libros.length; i++) { // recorre la lista de libros
-            suma += libros[i].getPrecio(); // suma el precio de cada libro
+    public static int calcularPrecioTotal(Libro[] libros) { //metodo que devuelve numero entero y recibe un arreglo de libros
+        int suma = 0; // donde se acumula el total de los precios
+        for (int i = 0; i < libros.length; i++) { // recorre la posicion del arreglo de libros
+            suma += libros[i].getPrecio(); // accede al libro en la pocision i, agarra el precio del libro y acumula
         }
         return suma;
     }
 
     //metodo que filtra los libros por precio mayor a un valor dado 
-    public static Libro[] filtrarPorPrecio(Libro[] libros, int valor) {
-        int contador = 0;
-        for (Libro libro : libros) {
-            if (libro.getPrecio() > valor) {
-                contador++;
+    public static Libro[] filtrarPorPrecio(Libro[] libros, int valor) { // devuelve un arreglo de libros
+        int contador = 0; 
+        for (Libro libro : libros) { // recorre todo el arreglo
+            if (libro.getPrecio() > valor) { // si el libre tiene un precio mayor al valor
+                contador++; // incrementa el contador 
             }
         }
 
-        Libro[] filtrados = new Libro[contador];
-        int i = 0;
-        for (Libro libro : libros) {
-            if (libro.getPrecio() > valor) {
-                filtrados[i] = libro;
-                i++;
-            }
+        Libro[] filtrados = new Libro[contador];// nuevo arreglo, con el tamaño de contador
+        int i = 0; 
+        for (Libro libro : libros) { // recorre todo el arreglo
+            if (libro.getPrecio() > valor) { //si cumple la condicion
+                filtrados[i] = libro; // agrega el libro al nuevo arreglo
+                i++;// se incrementa para pasar a la siguiente posicion
+            } 
         }
 
-        return filtrados;
+        return filtrados; // devuelve el resultado
     }
 
     //metodo que ordena los libros por precio (menor a mayor) ordenamiento de burbuja
-    public static void ordenarPorPrecio(Libro[] libros) {
-        int n = libros.length;
-        for (int i = 0; i < n - 1; i++) {
-            for (int j = 0; j < n - i - 1; j++) {
-                if (libros[j].getPrecio() > libros[j + 1].getPrecio()) {
-                    // Intercambiar
-                    Libro temp = libros[j];
-                    libros[j] = libros[j + 1];
-                    libros[j + 1] = temp;
+    public static void ordenarPorPrecio(Libro[] libros) { // recibe arreglo de objetos tipo libro
+        int n = libros.length; // cuantos elementos hay en el arreglo a ordenar
+        for (int i = 0; i < n - 1; i++) { //cuantas veces recorre el algoritmo por el arreglo, pone el mas alto al final
+            for (int j = 0; j < n - i - 1; j++) { //recorre desde el principio hasta el ultimo no ordenado 
+                if (libros[j].getPrecio() > libros[j + 1].getPrecio()) { // hace comparacion con el de al lado para ordenar o deja ahi
+                    // Intercambiar 
+                    Libro temp = libros[j]; // guarda el libro actual en temp
+                    libros[j] = libros[j + 1]; // mueve el libro siguiente a la posicion actual
+                    libros[j + 1] = temp; // pone el libro guardado en temp en la posicion siguiente
                 }
             }
         }

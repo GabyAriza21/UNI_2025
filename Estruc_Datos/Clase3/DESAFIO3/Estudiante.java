@@ -18,10 +18,6 @@ public class Estudiante {
     public String getNombre() {
         return nombre;
     }
-    
-    public void setMatricula(boolean matricula) {
-        this.matricula = matricula;
-    }
 
     public String toString() {
         return "Estudiante { Nombre: " + nombre +

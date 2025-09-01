@@ -14,7 +14,7 @@ public class Matrices {
     }
 
     // mostrar matriz
-    public String mostrarMatriz(int[][] m) {
+    public String mostrarMatriz(int[][] m) { 
         String cad = "";
         for (int i = 0; i < m.length; i++) {
             for (int j = 0; j < m.length; j++) {

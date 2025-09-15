@@ -29,7 +29,7 @@ public class ValidacionCadenasPila {
             }
             p.pop();
         }
-        
+
         //operador ternario
         System.out.println(contador1 == contador2 ? "equilibrados" : "no equilibrados");
 
@@ -43,3 +43,8 @@ public class ValidacionCadenasPila {
 
     }
 }
+
+/*tarea
+ * revisar e implementar los metodos que se heredan de la clase vector 
+ * hacer un ejercicio donde se hagan las pruebas de cada metodo 
+ */

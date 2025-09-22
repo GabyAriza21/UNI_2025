@@ -38,6 +38,32 @@ public class VectorMetodos {
 
         System.out.println("Vector con nueva lista agregada: " + frutas);
 
+        //agregar una nueva coleccion en una posicion especifica
+
+        frutas.addAll(3, frutass1);
+
+        System.out.println("Vector con posicion/nueva lista agregada: " + frutas);
+
+        //agergar elemento al final del vector
+
+        //nuevo vector
+        Vector<String> frutass2 = new Vector<>(2);
+        
+        //elementos del vector no vacio
+        frutass2.addElement("pomelo");
+        frutass2.addElement("toronja");
+
+        System.out.println("vector original: " + frutass2);
+        System.out.println("Tamaño vector: " + frutass2.size());
+        System.out.println("Capacidad vector: " + frutass2.capacity());
+
+        frutass2.addElement("guayaba");
+
+        System.out.println("vector actualizado: " + frutass2);
+        System.out.println("Tamaño vector: " + frutass2.size());
+        System.out.println("Capacidad vector: " + frutass2.capacity());
+
+
         System.out.println("----------Stack----------");
 
         //metodo add en un stack 
@@ -60,7 +86,12 @@ public class VectorMetodos {
         Vector<String> fruta = new Vector<>();
 
         fruta.add("limon");
-         fruta.add("Naranja");
+        fruta.add("Naranja");
+
+        boolean agregar2 = frutas2.addAll(fruta);
+
+        System.out.println("Stack con nueva lista:" + frutas2);
+
 
 
 

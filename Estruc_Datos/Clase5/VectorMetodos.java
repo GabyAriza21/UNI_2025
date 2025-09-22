@@ -15,16 +15,28 @@ public class VectorMetodos {
         frutas.add("manzana");
 
         //muestra el vector lleno 
-        System.out.println(frutas);
+        System.out.println("Vector frutas inicial: " + frutas);
 
         frutas.add("papaya");
 
-        System.out.println(frutas);
+        System.out.println("Vector frutas nuevo elemento: " + frutas);
 
         //agregar un elemento en la posicion indicada
         frutas.add(2,"maracuya");
         
-        System.out.println(frutas);
+        System.out.println("Vector frutas nuevo elemento en posicion 2: " + frutas);
+
+        //agregar una nueva coleccion
+
+        Stack<String> frutass1 = new Stack<>();
+
+        frutass1.add("arandanos");
+        frutass1.add("carambolo");
+        frutass1.add("piña");
+
+        boolean nuevaLista = frutas.addAll(frutass1);
+
+        System.out.println("Vector con nueva lista agregada: " + frutas);
 
         System.out.println("----------Stack----------");
 
@@ -44,6 +56,12 @@ public class VectorMetodos {
         frutas2.add(2,"ciruela");
         
         System.out.println(frutas2);
+
+        Vector<String> fruta = new Vector<>();
+
+        fruta.add("limon");
+         fruta.add("Naranja");
+
 
 
         

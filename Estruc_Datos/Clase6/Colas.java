@@ -16,7 +16,7 @@ public class Colas {
 
         System.out.println("Cola original: " + cola);
         System.out.println(cola.element());
-        
+
         boolean agregar = cola.offer(15);
         System.out.println(agregar);
         System.out.println("Cola agregada: " + cola);
@@ -35,8 +35,17 @@ public class Colas {
 
         System.out.println(cola.poll());
 
-
-
     }
-    
+
 }
+
+/* Queue-> interfaz que representa una cola 
+cola-> coleccion de elementos (FIFO)
+
+SINTAXIS-> public interface Queue<E> extends Collecttion<E>
+E-> el tipo de dato que va  aguardar la cola
+- Queue<String> colaTexto = new LinkedList<>();
+- Queue<Interger> colaTexto = new ArrayDeque<>();
+
+*/
+

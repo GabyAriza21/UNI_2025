@@ -11,10 +11,21 @@ public class GestorTareas {
     private HashMap<String, String> registroTrazabilidad; // tareas completadas
 
     // constructor: tareas vacias
+
+
     public GestorTareas() {
         this.pilaPrioritaria = new Stack<>();
         this.colaEspera = new java.util.LinkedList<>();
         this.registroTrazabilidad = new HashMap<>();
+    }
+
+    public void validarTareas(){
+        if (pilaPrioritaria == null || colaEspera == null){
+            throw new IllegalStateException("Estructura no inicializada");
+        }
+        if(pilaPrioritaria.isEmpty() && colaEspera.isEmpty()){
+            throw new IllegalStateException("No se puede iniciar con estructuras vacias");
+        }
     }
 
     // tarea segun su proioridad
@@ -30,6 +41,7 @@ public class GestorTareas {
 
     // siguente tarea a ejecutar
     public Tarea procesarSiguienteTarea() {
+        validarTareas();
         Tarea tareaProcesada = null;
 
         if (!pilaPrioritaria.isEmpty()) {

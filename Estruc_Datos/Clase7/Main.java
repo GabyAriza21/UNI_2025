@@ -11,10 +11,11 @@ public class Main {
         Tarea tarea4 = new Tarea("4", "Preparar presentación", 3, System.currentTimeMillis());
 
         // Agregar tareas al gestor
-        gestor.agregarTarea(tarea1);
+        gestor.agregarTarea(tarea1); 
         gestor.agregarTarea(tarea2);
         gestor.agregarTarea(tarea3);
         gestor.agregarTarea(tarea4);
+        
 
         gestor.mostrarResumen();
 

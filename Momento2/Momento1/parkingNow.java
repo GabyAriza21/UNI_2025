@@ -1,4 +1,4 @@
-package Momento1;
+package Momento2.Momento1;
 
 
 // Esta clase permite leer la entrada de datos por teclado
